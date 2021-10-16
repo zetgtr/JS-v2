@@ -55,4 +55,10 @@ header {
   box-shadow: 0 5px 8px black;
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.goods-total {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }/*# sourceMappingURL=style.css.map */
