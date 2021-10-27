@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.conteiner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+header {
+  height: 50px;
+  background-color: black;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.goods-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+.goods-item {
+  min-width: 100px;
+  align-items: center;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #F8F8F8;
+}
+
+.goods-item:hover {
+  box-shadow: 0 5px 8px black;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.cart-button {
+  margin-left: 20px;
+  width: 100px;
+  height: 32px;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.cart-button:hover {
+  background: #F8F8F8;
+  box-shadow: 0 5px 8px black;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.goods-total {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.goods-price {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.cart-goods {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.regform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin: 0px 20px;
+  border-radius: 10px;
+  padding-left: 5px;
+  width: 150px;
+  border: solid 1px;
+}
+
+textarea {
+  border-radius: 10px;
+  padding-left: 5px;
+  width: 150px;
+  border: solid 1px;
+}
+
+.error {
+  background-color: red;
+}
+
+.formGoods {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.formDiv {
+  box-shadow: 0px 0px 22px currentColor;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+.fa-comment {
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.fa-times {
+  position: fixed;
+  right: 20px;
+  z-index: 9999;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.hText {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.submit {
+  margin: 12px 0px 15px;
+  background: #5A98D0;
+  height: 33px;
+}
+
+.reg {
+  position: relative;
+}/*# sourceMappingURL=style.css.map */

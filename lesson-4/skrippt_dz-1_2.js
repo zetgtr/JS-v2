@@ -1,0 +1,5 @@
+//дз-1 и 2
+
+const str = "How many more films will feature Robert Downey Jr. as Iron Man? The actor made his debut as the Marvel superhero in the surprise monster hit Iron Man in 2008 and will reprise his role for the eighth time in the upcoming Avengers: Infinity War. Fans have speculated that it could be his final film in the Marvel Cinematic Universe. 'It's this cyclical thing,' Robert told News Corp Australia Network in an interview posted Sunday. 'I could have said when the first Avengers came out: 'It's never going to get any better than that. Everybody stop.' But to me, it's al ways about people and opportunities, like the Russos [Avengers directors Anthony Russo and Joe Russo], who I adore.' 'Everyone says to me it's like a glove that fits so well. I have to start over every time, but I am starting over with a pretty solid base. I just never want to blow it for the last six or seven [MCU movies] I have done by dropping the ball because I decided to go do it one more time,' he continued 'I just want to hang up my jersey before it's embarrassing.' " 
+const regexp = /\B'|'\B/g
+console.log(str.replace(regexp, '"'))
