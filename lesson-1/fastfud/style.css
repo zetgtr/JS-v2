@@ -1,0 +1,13 @@
+.conteiner {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.cart {
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
