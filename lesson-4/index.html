@@ -6,22 +6,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="app">
   <header>
     <div class="conteiner cart">
-    <button class="cart-button" onclick="list.fetchGoods()">Главная</button>
-    <button class="cart-button" onclick="list.getGoods()" type="button">Корзина</button>
+      <input type="text" class="goods-search" v-model="searchLine" />
+      <button class="cart-button" type="button" v-on:click="onSearch">Искать</button>
+    <button class="cart-button" v-on:click="onToggleCart" type="button">Корзина</button>
     
   </div>
   </header>
   <main>
-    <div class="conteiner regGoods">
+    <div class="goods-list">
+      <template v-if="this.filteredGoods.length > 0">
+        <div class="goods-item" v-on:click="addGoods(good.id_product)" v-for="good of filteredGoods" v-bind:key="good.id_product">
+          <h2 >{{ good.product_name }}</h2>
+          <p>${{ good.price }}</p>
+        </div>
+      </template>
+      <template v-else >
+        <h2>Список пуст</h2>
+      </template>
       
     </div>
-    <div class="formGoods">
-      <i class="far fa-comment" onclick="regGoods()"></i>
-    </div>
   </main>
+    <div class="modal" v-if="isVisibleCart">
+      <div class="goods-list">
+        <div class="goods-item" v-on:click="delGoods(good.id_product)"  v-for="good of cart" v-bind:key="good.id_product">
+          <h2 v-bind:id="good.id_product">{{ good.qu }}</h2>
+          <h2>{{ good.product_name }}</h2>
+          <p v-bind:id="good.price_id">${{ good.price }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
   
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="script.js"></script>
+  
 </body>
 </html>
