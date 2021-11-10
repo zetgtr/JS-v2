@@ -1,0 +1,18 @@
+.goods-list{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.good-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    margin-right: 16px;
+    width: 200px;
+    margin-bottom: 16px;
+}
+
+

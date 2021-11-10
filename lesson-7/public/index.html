@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <search v-on:search="onSearch"></search>
+      <button class="cart-button" v-on:click ="onCart" type="button">Корзина</button>
+    </header>
+    <main>
+      <goods-list 
+        v-bind:list="filteredGoods"
+        v-on:check="loadCart"
+      ></goods-list>
+      <goods-cart
+        v-bind:cart="cart"
+        v-bind:isvisible="isVisibleCart"
+        v-on:check="loadCart"
+      ></goods-cart>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
