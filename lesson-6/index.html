@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>eShop</title>
+  <script src="https://kit.fontawesome.com/7c4e062852.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+</head>
+<body>
+  <div id="app">
+  <header>
+    <div class="conteiner cart search">
+      <search v-on:oncart="onToggleCart" v-on:searchs="onSearch" ></search>
+    </div>
+  </header>
+  <main>
+      <list v-bind:error="error" v-bind:item="filtered" v-on:add="addGoods"></list>
+  </main>
+      <cart v-bind:cart="filtredCart" v-bind:isvisible="isVisibleCart" v-on:del="delGoods"></cart>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="component.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
